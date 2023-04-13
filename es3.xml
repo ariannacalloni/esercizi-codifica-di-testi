@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Aprire il file XML non ben formato presente nel repository
+github:
+validarlo con un parser XML
+correggerlo (commentando gli errori e le modifiche)
+aggiungere un figlio (child) ad un elemento
+aggiungere un fratello (sibling) ad un elemento-->
+
+<doc>
+    <tag>
+        <well>
+            <child></child>
+            <!-- ho aggiunto un fratello all'elemento "child"-->
+            <child2></child2>
+        </well>
+        <noWell>
+            <!-- l'elemento "noWell" e l'elemento "noWellNested" erano annidati scorretamente -->
+            <noWellNested>
+                <!--Ho aggiunto un figlio all'elemento "noWellNested"-->
+                <child1></child1>
+            </noWellNested>
+        </noWell>
+    </tag>
+</doc>
