@@ -1,0 +1,23 @@
+<!--root: TEI
+Figli:
+- header(obbligatorio una volta sola)
+- facsimile(opzionale una volta sola)
+- testo(obbligatorio una o pi`u volte)
+* testo `e un mixed content con possibile elemento <seg>
+Attributi:
+- header: type:(fixed, CDATA “intestazione”); lang(opzionale,
+NMTOKEN)
+- facsimile: source:(obbligatorio); ref(optionale, IDREFS)
+- testo: id(obbligatorio, ID) type(opzionale contenuto testuale)-->
+
+<!ELEMENT TEI (header, facsimile?, testo+)>
+<!ELEMENT TESTO (#PCDATA| seg)*>
+<!ELEMENT SEG (#PCDATA)>
+<!ELEMENT HEADER (#PCDATA)>
+<!ELEMENT FACSIMILE (#PCDATA)>
+<!ATTLIST HEADER type CDATA #FIXED "intestazione">
+<!ATTLIST HEADER lang NMTOKEN #IMPLIED>
+<!ATTLIST FACSIMILE source CDATA #REQUIRED>
+<!ATTLIST FACSIMILE ref IDREFS #IMPLIED>
+<!ATTLIST TESTO id ID #REQUIRED>
+<!ATTLIST TESTO type CDATA #IMPLIED>
