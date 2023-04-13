@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Inserire all’interno di un tag un frammento di codice HTML -->
+
+<element> <![CDATA[ <title>Titolo</title> <p>Paragrafo</p>]]> </element>
