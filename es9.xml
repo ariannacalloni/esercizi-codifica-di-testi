@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- utilizzare puntatori, note, lista, glossario, marcare nomi, rs, term-->
+
+<text>
+    <body>
+        <list type="language">
+            <head>Linguaggi di programmazione:</head>
+            <item><term>C#</term></item>
+            <item><term>Java</term></item>
+            <item><term>PHP</term></item>
+            <item><term>Python</term></item>
+            <item><term>Javascript</term></item>
+        </list>
+        <note>Linguaggi di programmazione più usati nel 2022</note>
+    </body>
+</text>
